@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
-
+import Cards from './components/Cards';
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
   <Router>
         <Navbar />
         <HeroSection />
+        <Cards />
         <Routes>
         <Route path='/' exact component={Home} />
         </Routes>
